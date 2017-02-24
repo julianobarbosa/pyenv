@@ -56,7 +56,7 @@ pyenv deactivate
 
 ```console
 pyenv activate tools3
-pip install youtube-dl gnucash-to-beancount rows 
+pip install youtube-dl gnucash-to-beancount rows speedtest-cli
 pyenv deactivate
 ```
 
