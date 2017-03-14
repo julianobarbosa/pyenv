@@ -37,7 +37,7 @@ pyenv virtualenv 2.7.13 tools2
 
 ```console
 pyenv activate jupyter3
-pip install jupyter
+pip install -U jupyter
 python -m ipykernel install --user
 pyenv deactivate
 ```
@@ -46,7 +46,7 @@ pyenv deactivate
 
 ```console
 pyenv activate ipython2
-pip install ipykernel
+pip install -U ipykernel
 python -m ipykernel install --user
 pyenv deactivate
 ```
@@ -55,7 +55,7 @@ pyenv deactivate
 
 ```console
 pyenv activate tools3
-pip install youtube-dl gnucash-to-beancount rows speedtest-cli
+pip install -U youtube-dl mps-youtube gnucash-to-beancount rows speedtest-cli
 pyenv deactivate
 ```
 
@@ -63,7 +63,7 @@ pyenv deactivate
 
 ```console
 pyenv activate tools2
-pip install rename s3cmd fabric mercurial
+pip install -U rename s3cmd fabric mercurial
 pyenv deactivate
 ```
 
