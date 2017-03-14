@@ -55,7 +55,7 @@ pyenv deactivate
 
 ```console
 pyenv activate tools3
-pip install -U youtube-dl mps-youtube gnucash-to-beancount rows speedtest-cli
+pip install -U dbus-python pygobject youtube-dl mps-youtube gnucash-to-beancount rows speedtest-cli
 pyenv deactivate
 ```
 
