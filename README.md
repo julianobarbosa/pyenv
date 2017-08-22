@@ -20,15 +20,15 @@ curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-
 # Install python
 
 ```console
-pyenv install 3.6.0
+pyenv install 3.6.2
 pyenv install 2.7.13
 ```
 
 # Create Environment
 
 ```console
-pyenv virtualenv 3.6.0 jupyter3
-pyenv virtualenv 3.6.0 tools3
+pyenv virtualenv 3.6.2 jupyter3
+pyenv virtualenv 3.6.2 tools3
 pyenv virtualenv 2.7.13 ipython2
 pyenv virtualenv 2.7.13 tools2
 ```
@@ -69,6 +69,6 @@ pyenv deactivate
 
 # Enable
 ```console
-pyenv global 3.6.0 2.7.13 jupyter3 ipython2 tools3 tools2
+pyenv global 3.6.2 2.7.13 jupyter3 ipython2 tools3 tools2
 ```
 
