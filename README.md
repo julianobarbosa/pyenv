@@ -72,3 +72,9 @@ pyenv deactivate
 pyenv global 3.6.2 2.7.13 jupyter3 ipython2 tools3 tools2
 ```
 
+# ipython with pyenv
+```console
+curl -L http://hbn.link/hb-ipython-startup-script > ~/.ipython/profile_default/startup/00-venv-sitepackages.py
+```
+
+
