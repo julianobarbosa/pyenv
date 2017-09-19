@@ -29,8 +29,10 @@ pyenv install 2.7.13
 ```console
 pyenv virtualenv 3.6.2 jupyter3
 pyenv virtualenv 3.6.2 tools3
+pyenv virtualenv 3.6.2 neovim3
 pyenv virtualenv 2.7.13 ipython2
 pyenv virtualenv 2.7.13 tools2
+pyenv virtualenv 2.7.13 neovim2
 ```
 
 # Install jupyter on python3
@@ -64,6 +66,23 @@ pyenv deactivate
 ```console
 pyenv activate tools2
 pip install -U rename s3cmd fabric mercurial
+pyenv deactivate
+```
+
+# Install jupyter on neovim2
+
+```console
+pyenv activate neovim2
+pip install -U neovim
+pyenv deactivate
+```
+
+# Install jupyter on neovim3
+
+```console
+pyenv activate neovim3
+pip install -U neovim flake8
+ln -s `pyenv which flake8` ~/bin/flake8
 pyenv deactivate
 ```
 
