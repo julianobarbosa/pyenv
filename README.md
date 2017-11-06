@@ -21,7 +21,7 @@ curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-
 
 ```console
 pyenv install 3.6.3
-pyenv install 2.7.13
+pyenv install 2.7.14
 ```
 
 # Create Environment
@@ -30,9 +30,9 @@ pyenv install 2.7.13
 pyenv virtualenv 3.6.3 jupyter3
 pyenv virtualenv 3.6.3 tools3
 pyenv virtualenv 3.6.3 neovim3
-pyenv virtualenv 2.7.13 ipython2
-pyenv virtualenv 2.7.13 tools2
-pyenv virtualenv 2.7.13 neovim2
+pyenv virtualenv 2.7.14 ipython2
+pyenv virtualenv 2.7.14 tools2
+pyenv virtualenv 2.7.14 neovim2
 ```
 
 # Install jupyter on python3
