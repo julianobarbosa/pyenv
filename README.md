@@ -20,16 +20,16 @@ curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-
 # Install python
 
 ```console
-pyenv install 3.6.6
+pyenv install 3.7
 pyenv install 2.7.15
 ```
 
 # Create Environment
 
 ```console
-pyenv virtualenv 3.6.6 jupyter3
-pyenv virtualenv 3.6.6 tools3
-pyenv virtualenv 3.6.6 neovim3
+pyenv virtualenv 3.7 jupyter3
+pyenv virtualenv 3.7 tools3
+pyenv virtualenv 3.7 neovim3
 pyenv virtualenv 2.7.15 ipython2
 pyenv virtualenv 2.7.15 tools2
 pyenv virtualenv 2.7.15 neovim2
