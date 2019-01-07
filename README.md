@@ -65,7 +65,7 @@ pyenv deactivate
 
 ```console
 pyenv activate tools2
-pip install -U rename s3cmd fabric mercurial
+pip install -U rename s3cmd fabric mercurial ansible
 pyenv deactivate
 ```
 
