@@ -31,11 +31,11 @@ pyenv install 2.7.15
 # Create Environment
 
 ```console
-pyenv virtualenv 3.7.1 jupyter3 && \
-pyenv virtualenv 3.7.1 tools3 && \
-pyenv virtualenv 3.7.1 neovim3 && \
-pyenv virtualenv 2.7.15 ipython2 && \
-pyenv virtualenv 2.7.15 tools2 && \
+pyenv virtualenv 3.7.1 jupyter3
+pyenv virtualenv 3.7.1 tools3
+pyenv virtualenv 3.7.1 neovim3
+pyenv virtualenv 2.7.15 ipython2
+pyenv virtualenv 2.7.15 tools2
 pyenv virtualenv 2.7.15 neovim2
 ```
 
