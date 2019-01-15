@@ -75,7 +75,7 @@ pip install -U rename s3cmd fabric mercurial ansible
 pyenv deactivate
 ```
 
-# Install jupyter on neovim2
+# Install neovim2 on python2
 
 ```console
 pyenv activate neovim2
@@ -83,7 +83,7 @@ pip install -U neovim
 pyenv deactivate
 ```
 
-# Install jupyter on neovim3
+# Install neovim3 on python3
 
 ```console
 pyenv activate neovim3
