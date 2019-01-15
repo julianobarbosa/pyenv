@@ -18,7 +18,7 @@ curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-
 ```
 # Pre-Req
 ```console
-yum install gcc-plugin-devel python-devel python-six python-pygments graphviz
+yum install gcc-plugin-devel python-devel python-six python-pygments graphviz libffi-devel
 ```
 
 # Install python
