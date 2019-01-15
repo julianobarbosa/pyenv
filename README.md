@@ -62,6 +62,8 @@ pyenv deactivate
 ```console
 pyenv activate tools3
 pip install -U youtube-dl mps-youtube gnucash-to-beancount rows speedtest-cli fast.com
+# URL: https://www.tecmint.com/powerline-adds-powerful-statuslines-and-prompts-to-vim-and-bash/
+pip install git+git://github.com/Lokaltog/powerline
 pyenv deactivate
 ```
 
