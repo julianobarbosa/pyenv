@@ -16,6 +16,10 @@ eval "$(pyenv init -)"
 curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
 
 ```
+# Pre-Req
+```console
+yum install gcc-plugin-devel python-devel python-six python-pygments graphviz
+```
 
 # Install python
 
