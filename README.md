@@ -45,8 +45,9 @@ pyenv virtualenv 2.7.15 neovim2
 
 ```console
 pyenv activate jupyter3
-pip install -U jupyter
+pip install -U jupyter environment_kernels
 python -m ipykernel install --user
+jupyter notebook --generate-config
 pyenv deactivate
 ```
 
@@ -110,4 +111,12 @@ curl -L http://hbn.link/hb-ipython-startup-script > ~/.ipython/profile_default/s
 let g:python_host_prog = '/full/path/to/neovim2/bin/python'
 let g:python3_host_prog = '/full/path/to/neovim3/bin/python'
 ```
-
+# jupyter
+nvim /root/.jupyter/jupyter_notebook_config.py
+```console
+c.NotebookApp.kernel_spec_manager_class = 'environment_kernels.EnvironmentKernelSpecManager'
+c.EnvironmentKernelSpecManager.virtualenv_env_dirs=['~/.pyenv/versions/']
+c.EnvironmentKernelSpecManager.virtualenv_prefix_template = "{}"
+c.EnvironmentKernelSpecManager.display_name_template = "{}"
+```
+ 
