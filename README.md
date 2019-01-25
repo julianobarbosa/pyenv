@@ -101,6 +101,7 @@ pyenv global 3.7.2 2.7.15 jupyter3 ipython2 tools3 tools2 neovim3 neovim2
 
 # ipython with pyenv
 ```console
+ipython profile create
 curl -L http://hbn.link/hb-ipython-startup-script > ~/.ipython/profile_default/startup/00-venv-sitepackages.py
 ```
 
