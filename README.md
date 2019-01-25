@@ -102,4 +102,9 @@ pyenv global 3.7.2 2.7.15 jupyter3 ipython2 tools3 tools2 neovim3 neovim2
 curl -L http://hbn.link/hb-ipython-startup-script > ~/.ipython/profile_default/startup/00-venv-sitepackages.py
 ```
 
+# neovim 
+```console
+let g:python_host_prog = '/full/path/to/neovim2/bin/python'
+let g:python3_host_prog = '/full/path/to/neovim3/bin/python'
+```
 
