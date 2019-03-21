@@ -19,6 +19,13 @@ git clone https://github.com/yyuu/pyenv-virtualenvwrapper.git ~/.pyenv/plugins/p
 ```
 
 # Pre-Req
+## ubuntu
+```console
+sudo apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
+```
+## centos
 ```console
 yum install gcc-plugin-devel python-devel python-six python-pygments graphviz libffi-devel bzip2-devel readline-devel openssl-devel sqlite-devel
 ```
