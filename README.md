@@ -98,7 +98,7 @@ pyenv deactivate
 
 ```console
 pyenv activate neovim3
-pip install -U neovim flake8
+pip install -U neovim flake8 jedi autopep8
 ln -s `pyenv which flake8` ~/bin/flake8
 pyenv deactivate
 ```
