@@ -105,7 +105,7 @@ pyenv deactivate
 
 # Enable
 ```console
-pyenv global 3.7.3 2.7.15 jupyter3 ipython2 tools3 tools2 neovim3 neovim2
+pyenv global 3.7.3 2.7.16 jupyter3 ipython2 tools3 tools2 neovim3 neovim2
 ```
 
 # ipython with pyenv
