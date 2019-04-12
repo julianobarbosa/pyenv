@@ -34,7 +34,7 @@ yum install gcc-plugin-devel python-devel python-six python-pygments graphviz li
 
 ```console
 pyenv install 3.7.3
-pyenv install 2.7.15
+pyenv install 2.7.16
 ```
 
 # Create Environment
@@ -43,9 +43,9 @@ pyenv install 2.7.15
 pyenv virtualenv 3.7.3 jupyter3 && \
 pyenv virtualenv 3.7.3 tools3 && \
 pyenv virtualenv 3.7.3 neovim3 && \
-pyenv virtualenv 2.7.15 ipython2 && \
-pyenv virtualenv 2.7.15 tools2 && \
-pyenv virtualenv 2.7.15 neovim2
+pyenv virtualenv 2.7.16 ipython2 && \
+pyenv virtualenv 2.7.16 tools2 && \
+pyenv virtualenv 2.7.16 neovim2
 ```
 
 # Install jupyter on python3
