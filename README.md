@@ -58,7 +58,7 @@ jupyter notebook --generate-config
 pyenv deactivate
 ```
 
-# Install jupyter on python2
+# Install ipython on python2
 
 ```console
 pyenv activate ipython2
