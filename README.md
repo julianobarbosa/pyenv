@@ -71,7 +71,7 @@ pyenv deactivate
 
 ```console
 pyenv activate tools3
-pip install -U youtube-dl mps-youtube gnucash-to-beancount rows speedtest-cli fast.com
+pip install -U youtube-dl mps-youtube gnucash-to-beancount rows speedtest-cli fast.com ansible
 # URL: https://www.tecmint.com/powerline-adds-powerful-statuslines-and-prompts-to-vim-and-bash/
 # pip install git+git://github.com/Lokaltog/powerline
 pip install vim-power
@@ -82,7 +82,7 @@ pyenv deactivate
 
 ```console
 pyenv activate tools2
-pip install -U rename s3cmd fabric mercurial ansible
+pip install -U rename s3cmd fabric mercurial
 pyenv deactivate
 ```
 
