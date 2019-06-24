@@ -21,7 +21,7 @@ git clone https://github.com/yyuu/pyenv-virtualenvwrapper.git ~/.pyenv/plugins/p
 # Pre-Req
 ## OpenSuse
 ```console
-zypper install gcc automake openssl-devel ncurses-devel readline-devel zlib-devel tk-devel libffi-devel sqlite3-devel
+zypper install gcc automake make openssl-devel ncurses-devel readline-devel zlib-devel tk-devel libffi-devel sqlite3-devel
 ```
 
 ## ubuntu
