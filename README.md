@@ -121,9 +121,11 @@ curl -L http://hbn.link/hb-ipython-startup-script > ~/.ipython/profile_default/s
 
 # neovim 
 ```console
-let g:python_host_prog = '/full/path/to/neovim2/bin/python'
-let g:python3_host_prog = '/full/path/to/neovim3/bin/python'
+let g:python_host_prog = expand('$HOME/.pyenv/versions/neovim2/bin/python')
+let g:pythol2_host_prog = expand('$HOME/.pyenv/versions/neovim2/bin/python')
+let g:python3_host_prog = expand('$HOME/.pyenv/versions/neovim3/bin/python')
 ```
+
 # jupyter
 nvim /root/.jupyter/jupyter_notebook_config.py
 ```console
