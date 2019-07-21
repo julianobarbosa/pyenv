@@ -6,6 +6,7 @@ mkdir ~/workspace
 
 # ~/.zshrc
 ```console
+export PATH=$HOME/.pyenv/bin:$PATH
 export WORKON_HOME=~/.ve
 export PROJECT_HOME=~/workspace
 eval "$(pyenv init -)"
