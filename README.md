@@ -128,7 +128,7 @@ let g:python3_host_prog = expand('$HOME/.pyenv/versions/neovim3/bin/python')
 ```
 
 # jupyter
-nvim /root/.jupyter/jupyter_notebook_config.py
+nvim ~/.jupyter/jupyter_notebook_config.py
 ```console
 c.NotebookApp.kernel_spec_manager_class = 'environment_kernels.EnvironmentKernelSpecManager'
 c.EnvironmentKernelSpecManager.find_conda_envs=False
