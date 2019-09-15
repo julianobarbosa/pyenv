@@ -27,9 +27,13 @@ git clone https://github.com/yyuu/pyenv-virtualenvwrapper.git ~/.pyenv/plugins/p
 zypper install gcc automake make openssl-devel ncurses-devel readline-devel zlib-devel tk-devel libffi-devel sqlite3-devel
 ```
 
-## ubuntu
+## ubuntu/debian
 ```console
 sudo apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
+```
+Alternative of libreadline-dev:
+```sh
+sudo apt install libedit-dev
 ```
 ## centos
 ```console
