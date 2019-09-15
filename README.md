@@ -10,6 +10,8 @@ export PATH=$HOME/.pyenv/bin:$PATH
 export WORKON_HOME=~/.ve
 export PROJECT_HOME=~/workspace
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 #pyenv virtualenvwrapper_lazy
 ```
 
