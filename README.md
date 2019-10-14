@@ -120,6 +120,12 @@ ipython profile create
 curl -L http://hbn.link/hb-ipython-startup-script > ~/.ipython/profile_default/startup/00-venv-sitepackages.py
 ```
 
+# Python2
+```console
+pip2 install virtualenv
+python2 -m virtualenv .venv
+```
+
 # neovim 
 ```console
 let g:python_host_prog = expand('$HOME/.pyenv/versions/neovim2/bin/python')
