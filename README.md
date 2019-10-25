@@ -39,16 +39,16 @@ yum install gcc-plugin-devel python-devel python-six python-pygments graphviz li
 # Install python
 
 ```console
-pyenv install 3.7.4
+pyenv install 3.7.5
 pyenv install 2.7.16
 ```
 
 # Create Environment
 
 ```console
-pyenv virtualenv 3.7.4 jupyter3 && \
-pyenv virtualenv 3.7.4 tools3 && \
-pyenv virtualenv 3.7.4 neovim3 && \
+pyenv virtualenv 3.7.5 jupyter3 && \
+pyenv virtualenv 3.7.5 tools3 && \
+pyenv virtualenv 3.7.5 neovim3 && \
 pyenv virtualenv 2.7.16 ipython2 && \
 pyenv virtualenv 2.7.16 tools2 && \
 pyenv virtualenv 2.7.16 neovim2
@@ -111,7 +111,7 @@ pyenv deactivate
 
 # Enable
 ```console
-pyenv global 3.7.4 2.7.16 jupyter3 ipython2 tools3 tools2 neovim3 neovim2
+pyenv global 3.7.5 2.7.16 jupyter3 ipython2 tools3 tools2 neovim3 neovim2
 ```
 
 # ipython with pyenv
