@@ -36,6 +36,13 @@ sudo apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev librea
 yum install gcc-plugin-devel python-devel python-six python-pygments graphviz libffi-devel bzip2-devel readline-devel openssl-devel sqlite-devel
 ```
 
+## centos 8
+```console
+dnf install dnf-plugins-core  # install this to use 'dnf builddep'
+dnf builddep python3
+dnf update -y
+```
+
 # Install python
 
 ```console
