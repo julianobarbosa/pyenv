@@ -38,7 +38,7 @@ yum install gcc-plugin-devel python-devel python-six python-pygments graphviz li
 
 ## centos 8
 ```console
-dnf install dnf-plugins-core  # install this to use 'dnf builddep'
+dnf install openssl-devel bzip2-devel dnf-plugins-core  # install this to use 'dnf builddep'
 dnf builddep python3
 dnf update -y
 ```
