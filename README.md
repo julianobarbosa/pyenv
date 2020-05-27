@@ -33,7 +33,8 @@ sudo apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev librea
 ```
 ## centos
 ```console
-yum install gcc-plugin-devel python-devel python-six python-pygments graphviz libffi-devel bzip2-devel readline-devel openssl-devel sqlite-devel
+yum install @development zlib-devel bzip2 bzip2-devel readline-devel sqlite \
+sqlite-devel openssl-devel xz xz-devel libffi-devel findutils
 ```
 
 ## centos 8
