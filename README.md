@@ -137,7 +137,7 @@ python2 -m virtualenv .venv
 # neovim 
 ```console
 let g:python_host_prog = expand('$HOME/.pyenv/versions/neovim2/bin/python')
-let g:pythol2_host_prog = expand('$HOME/.pyenv/versions/neovim2/bin/python')
+let g:python2_host_prog = expand('$HOME/.pyenv/versions/neovim2/bin/python')
 let g:python3_host_prog = expand('$HOME/.pyenv/versions/neovim3/bin/python')
 ```
 
