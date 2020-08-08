@@ -150,4 +150,17 @@ c.EnvironmentKernelSpecManager.virtualenv_env_dirs=['~/.pyenv/versions/']
 c.EnvironmentKernelSpecManager.virtualenv_prefix_template = "{}"
 c.EnvironmentKernelSpecManager.display_name_template = "{}"
 ```
- 
+
+# ipython
+```console
+# Install IPython: python3 -m pip install ipython
+
+import IPython
+from traitlets.config import get_config
+
+cfg = get_config()
+cfg.InteractiveShellEmbed.colors = "Linux"  # syntax highlighting
+cfg.InteractiveShellEmbed.confirm_exit = False
+
+alias interacti IPython.embed(config=cfg)
+```
