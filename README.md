@@ -39,7 +39,7 @@ sqlite-devel openssl-devel xz xz-devel libffi-devel findutils
 
 ## centos 8
 ```console
-dnf install readline-devel sqlite-devel openssl-devel bzip2-devel dnf-plugins-core  # install this to use 'dnf builddep'
+dnf install readline-devel libffi-devel sqlite-devel openssl-devel bzip2-devel dnf-plugins-core  # install this to use 'dnf builddep'
 dnf builddep python3
 dnf update -y
 ```
