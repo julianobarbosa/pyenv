@@ -86,13 +86,13 @@ pyenv deactivate
 ```console
 mkdir -p ~/bin
 pyenv activate tools3
-pip install -U ansible zabbix-api youtube-dl mps-youtube gnucash-to-beancount rows speedtest-cli fast.com ansible pylint pytest autopep8 jedi
+pip install -U ansible zabbix-api youtube-dl mps-youtube gnucash-to-beancount rows speedtest-cli fast.com ansible 
 # URL: https://www.tecmint.com/powerline-adds-powerful-statuslines-and-prompts-to-vim-and-bash/
 # pip install git+git://github.com/Lokaltog/powerline
 pip install vim-power
-ln -s `pyenv which autopep8` ~/bin/autopep8
+
 ln -s `pyenv which jedi` ~/bin/jedi
-ln -s `pyenv which pylint` ~/bin/pylint
+
 ln -s `pyenv which pytest` ~/bin/pytest
 pyenv deactivate
 ```
@@ -117,8 +117,10 @@ pyenv deactivate
 
 ```console
 pyenv activate neovim3
-pip install -U pynvim flake8 jedi autopep8 pep8 pyflakes isort yapf
+pip install -U pynvim pylint flake8 jedi autopep8 pep8 pyflakes isort yapf
+ln -s `pyenv which autopep8` ~/bin/autopep8
 ln -s `pyenv which flake8` ~/bin/flake8
+ln -s `pyenv which pylint` ~/bin/pylint
 pyenv deactivate
 ```
 
