@@ -86,7 +86,7 @@ pyenv deactivate
 ```console
 mkdir -p ~/bin
 pyenv activate tools3
-pip install -U ansible zabbix-api youtube-dl mps-youtube gnucash-to-beancount rows speedtest-cli fast.com ansible 
+pip install -U ansible cookiecutter gnucash-to-beancount mps-youtube rows speedtest-cli fast.com zabbix-api youtube-dl  
 # URL: https://www.tecmint.com/powerline-adds-powerful-statuslines-and-prompts-to-vim-and-bash/
 # pip install git+git://github.com/Lokaltog/powerline
 pip install vim-power
