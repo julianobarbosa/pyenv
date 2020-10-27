@@ -69,6 +69,7 @@ pyenv activate jupyter3
 pip install -U jupyter environment_kernels
 python -m ipykernel install --user
 jupyter notebook --generate-config
+ln -s `pyenv which jupyter` ~/bin/jupyter
 pyenv deactivate
 ```
 
