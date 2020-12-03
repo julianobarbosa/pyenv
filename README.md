@@ -87,11 +87,12 @@ pyenv deactivate
 ```console
 mkdir -p ~/bin
 pyenv activate tools3
-pip install -U ansible colorama cookiecutter gnucash-to-beancount mps-youtube rows speedtest-cli fast.com zabbix-api youtube-dl  
+pip install -U ansible colorama cookiecutter gnucash-to-beancount mps-youtube rows speedtest-cli fast.com zabbix-api youtube-dl tmuxp 
 # URL: https://www.tecmint.com/powerline-adds-powerful-statuslines-and-prompts-to-vim-and-bash/
 # pip install git+git://github.com/Lokaltog/powerline
 pip install vim-power
 ln -s `pyenv which pytest` ~/bin/pytest
+ln -s `pyenv which tmuxp` ~/bin/tmuxp
 pyenv deactivate
 ```
 
