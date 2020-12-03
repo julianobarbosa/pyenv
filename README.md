@@ -116,11 +116,18 @@ pyenv deactivate
 
 ```console
 pyenv activate neovim3
-pip install -U pynvim pylint flake8 jedi autopep8 pep8 pyflakes isort yapf mypy
+pip install -U black pynvim pylint flake8 jedi autopep8 pep8 pydocstyle pyflakes isort yapf yamllint mypy
 ln -s `pyenv which autopep8` ~/bin/autopep8
+ln -s `pyenv which black` ~/bin/black
 ln -s `pyenv which flake8` ~/bin/flake8
+ln -s `pyenv which isort` ~/bin/isort
+ln -s `pyenv which jedi` ~/bin/jedi
 ln -s `pyenv which mypy` ~/bin/mypy
+ln -s `pyenv which pydocstyle` ~/bin/pydocstyle
 ln -s `pyenv which pylint` ~/bin/pylint
+ln -s `pyenv which yapf` ~/bin/yapf
+ln -s `pyenv which yamllint` ~/bin/yamllint
+
 pyenv deactivate
 ```
 
