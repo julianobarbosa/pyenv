@@ -48,7 +48,7 @@ dnf update -y
 
 ```console
 pyenv install 3.9.1
-pyenv install 2.7.16
+pyenv install 2.7.18
 ```
 
 # Create Environment
@@ -57,9 +57,9 @@ pyenv install 2.7.16
 pyenv virtualenv 3.9.1 jupyter3 && \
 pyenv virtualenv 3.9.1 tools3 && \
 pyenv virtualenv 3.9.1 neovim3 && \
-pyenv virtualenv 2.7.16 ipython2 && \
-pyenv virtualenv 2.7.16 tools2 && \
-pyenv virtualenv 2.7.16 neovim2
+pyenv virtualenv 2.7.18 ipython2 && \
+pyenv virtualenv 2.7.18 tools2 && \
+pyenv virtualenv 2.7.18 neovim2
 ```
 
 # Install jupyter on python3
@@ -133,7 +133,7 @@ pyenv deactivate
 
 # Enable
 ```console
-pyenv global 3.9.1 2.7.16 jupyter3 ipython2 tools3 tools2 neovim3 neovim2
+pyenv global 3.9.1 2.7.18 jupyter3 ipython2 tools3 tools2 neovim3 neovim2
 ```
 
 # ipython with pyenv
