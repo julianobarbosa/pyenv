@@ -1,12 +1,12 @@
 ---
-
 - hosts: all
 
   tasks:
     - name: pip | pyenv | tools3 | install requirements using shell
+      tags: pip,pyenv,tools3
       shell: |
         # cd to project directory
-        ~/.pyenv/versions/tools3/bin/python -m pip install -U ansible colorama cookiecutter gnucash-to-beancount mps-youtube rows speedtest-cli fast.com zabbix-api youtube-dl tmuxp 
+        ~/.pyenv/versions/tools3/bin/python -m pip install -U ansible colorama cookiecutter gnucash-to-beancount mps-youtube rows speedtest-cli fast.com zabbix-api youtube-dl tmuxp
         if [ ! -L ~/bin/pytest]; then
           ln -s ~/.pyenv/versions/tools3/bin/pytest ~/bin/pytest
         fi
@@ -18,6 +18,7 @@
       register: pip_tools3_script_result
 
     - name: pip | pyenv | jupyter3 | install requirements using shell
+      tags: pip,pyenv,jupyter3
       shell: |
         # cd to project directory
         ~/.pyenv/versions/jupyter3/bin/python -m pip install -U jupyter environment_kernels
@@ -31,6 +32,7 @@
       register: pip_jupyter3_script_result
 
     - name: pip | pyenv | tools2 | install requirements using shell
+      tags: pip,pyenv,tools2
       shell: |
         # cd to project directory
         ~/.pyenv/versions/tools2/bin/python -m pip install -U rename s3cmd fabric mercurial pip
@@ -39,6 +41,7 @@
       register: pip_tools2_script_result
 
     - name: pip | pyenv | neovim2 | install requirements using shell
+      tags: pip,pyenv,neovim2
       shell: |
         # cd to project directory
         ~/.pyenv/versions/neovim2/bin/python -m pip install -U pip pynvim
@@ -47,6 +50,7 @@
       register: pip_neovim2_script_result
 
     - name: pip | pyenv | neovim3 | install requirements using shell
+      tags: pip,pyenv,neovim3
       shell: |
         # cd to project directory
         ~/.pyenv/versions/neovim3/bin/python -m pip install -U pip black pynvim pylint flake8 jedi autopep8 pep8 pydocstyle pyflakes isort yapf yamllint mypy
@@ -85,6 +89,7 @@
       register: pip_neovim3_script_result
 
     - name: pip | ipython | configuration
+      tags: pip,pyenv,ipython
       shell: |
         # cd to project directory
         ipython profile create
