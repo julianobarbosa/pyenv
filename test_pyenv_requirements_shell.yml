@@ -3,36 +3,52 @@
 
   tasks:
     - name: pip | pyenv | tools3 | install requirements using shell
-      tags: pip,pyenv,tools3
+      tags: packages,pyenv,workstation-packages,pip,tools3
       shell: |
         # cd to project directory
         ~/.pyenv/versions/tools3/bin/python -m pip install -U ansible colorama cookiecutter gnucash-to-beancount mps-youtube rows speedtest-cli fast.com zabbix-api youtube-dl tmuxp
-        if [ ! -L ~/bin/pytest]; then
-          ln -s ~/.pyenv/versions/tools3/bin/pytest ~/bin/pytest
-        fi
-        if [ ! -L ~/bin/tmuxp]; then
-          ln -s ~/.pyenv/versions/tools3/bin/tmuxp ~/bin/tmuxp
-        fi
       args:
         executable: /bin/bash
       register: pip_tools3_script_result
 
-    - name: pip | pyenv | jupyter3 | install requirements using shell
-      tags: pip,pyenv,jupyter3
-      shell: |
-        # cd to project directory
-        ~/.pyenv/versions/jupyter3/bin/python -m pip install -U jupyter environment_kernels
-        ~/.pyenv/versions/jupyter3/bin/python -m ipykernel install --user
-        ~/.pyenv/versions/jupyter3/bin/jupyter notebook --generate-config
-        if [ ! -L ~/bin/jupyter]; then
-          ln -s ~/.pyenv/versions/jupyter3/bin/jupyter ~/bin/jupyter
-        fi
-      args:
-        executable: /bin/bash
-      register: pip_jupyter3_script_result
+    - name: pip | pyenv | tools3 | link pytest
+      tags: packages,pyenv,workstation-packages,pip,tools3,pytest-link
+      file:
+        src: ~/.pyenv/versions/tools3/bin/pytest
+        dest: ~/bin/pytest
+        owner: barbosa
+        group: barbosa
+        state: link
+
+    - name: pip | pyenv | tools3 | link tmuxp
+      tags: packages,pyenv,workstation-packages,pip,tools3,tmuxp-link
+      file:
+        src: ~/.pyenv/versions/tools3/bin/tmuxp
+        dest: ~/bin/tmuxp
+        owner: barbosa
+        group: barbosa
+        state: link
+
+    # - name: pip | pyenv | jupyter3 | install requirements using shell
+    #   shell: |
+    #     # cd to project directory
+    #     ~/.pyenv/versions/jupyter3/bin/python -m pip install -U jupyter environment_kernels
+    #     ~/.pyenv/versions/jupyter3/bin/python -m ipykernel install --user
+    #     ~/.pyenv/versions/jupyter3/bin/jupyter notebook --generate-config -y
+    #     executable: /bin/bash
+    #   register: pip_jupyter3_script_result
+
+    - name: pip | pyenv | jupyter3 | link jupyter
+      tags: packages,pyenv,workstation-packages,pip,jupyter3,jupyter3-link
+      file:
+        src: ~/.pyenv/versions/jupyter3/bin/jupyter
+        dest: ~/bin/jupyter
+        owner: barbosa
+        group: barbosa
+        state: link
 
     - name: pip | pyenv | tools2 | install requirements using shell
-      tags: pip,pyenv,tools2
+      tags: packages,pyenv,workstation-packages,pip,tools2
       shell: |
         # cd to project directory
         ~/.pyenv/versions/tools2/bin/python -m pip install -U rename s3cmd fabric mercurial pip
@@ -41,7 +57,7 @@
       register: pip_tools2_script_result
 
     - name: pip | pyenv | neovim2 | install requirements using shell
-      tags: pip,pyenv,neovim2
+      tags: packages,pyenv,workstation-packages,pip,neovim2
       shell: |
         # cd to project directory
         ~/.pyenv/versions/neovim2/bin/python -m pip install -U pip pynvim
@@ -50,46 +66,123 @@
       register: pip_neovim2_script_result
 
     - name: pip | pyenv | neovim3 | install requirements using shell
-      tags: pip,pyenv,neovim3
+      tags: packages,pyenv,workstation-packages,pip,neovim3
       shell: |
         # cd to project directory
-        ~/.pyenv/versions/neovim3/bin/python -m pip install -U pip black pynvim pylint flake8 jedi autopep8 pep8 pydocstyle pyflakes isort yapf yamllint mypy
-        if [ ! -L ~/bin/autopep8]; then
-          ln -s `pyenv which autopep8` ~/bin/autopep8
-        fi
-        if [ ! -L ~/bin/black]; then
-          ln -s `pyenv which black` ~/bin/black
-        fi
-        if [ ! -L ~/bin/flake8]; then
-          ln -s `pyenv which flake8` ~/bin/flake8
-        fi
-        if [ ! -L ~/bin/isort]; then
-          ln -s `pyenv which isort` ~/bin/isort
-        fi
-        if [ ! -L ~/bin/jedi]; then
-          ln -s `pyenv which jedi` ~/bin/jedi
-        fi
-        if [ ! -L ~/bin/mypy]; then
-          ln -s `pyenv which mypy` ~/bin/mypy
-        fi
-        if [ ! -L ~/bin/pydocstyle]; then
-          ln -s `pyenv which pydocstyle` ~/bin/pydocstyle
-        fi
-        if [ ! -L ~/bin/pylint]; then
-          ln -s `pyenv which pylint` ~/bin/pylint
-        fi
-        if [ ! -L ~/bin/yapf]; then
-          ln -s `pyenv which yapf` ~/bin/yapf
-        fi
-        if [ ! -L ~/bin/yamllint]; then
-          ln -s `pyenv which yamllint` ~/bin/yamllint
-        fi
+        ~/.pyenv/versions/neovim3/bin/python -m pip install -U pip bandit black pylama pynvim pylint flake8 autopep8 pep8 prospector pydocstyle pyflakes isort yapf yamllint mypy
       args:
         executable: /bin/bash
       register: pip_neovim3_script_result
 
+    - name: pip | pyenv | neovim3 | link autopep8
+      tags: packages,pyenv,workstation-packages,pip,neovim3,autopep8-link
+      file:
+        src: ~/.pyenv/versions/neovim3/bin/autopep8
+        dest: ~/bin/autopep8
+        owner: barbosa
+        group: barbosa
+        state: link
+
+    - name: pip | pyenv | neovim3 | link bandit
+      tags: packages,pyenv,workstation-packages,pip,neovim3,bandit-link
+      file:
+        src: ~/.pyenv/versions/neovim3/bin/bandit
+        dest: ~/bin/bandit
+        owner: barbosa
+        group: barbosa
+        state: link
+
+    - name: pip | pyenv | neovim3 | link black
+      tags: packages,pyenv,workstation-packages,pip,neovim3,black-link
+      file:
+        src: ~/.pyenv/versions/neovim3/bin/black
+        dest: ~/bin/black
+        owner: barbosa
+        group: barbosa
+        state: link
+
+    - name: pip | pyenv | neovim3 | link flake8
+      tags: packages,pyenv,workstation-packages,pip,neovim3,flake8-link
+      file:
+        src: ~/.pyenv/versions/neovim3/bin/flake8
+        dest: ~/bin/flake8
+        owner: barbosa
+        group: barbosa
+        state: link
+
+    - name: pip | pyenv | neovim3 | link isort
+      tags: packages,pyenv,workstation-packages,pip,neovim3,isort-link
+      file:
+        src: ~/.pyenv/versions/neovim3/bin/isort
+        dest: ~/bin/isort
+        owner: barbosa
+        group: barbosa
+        state: link
+
+    - name: pip | pyenv | neovim3 | link prospector
+      tags: packages,pyenv,workstation-packages,pip,neovim3,prospector-link
+      file:
+        src: ~/.pyenv/versions/neovim3/bin/prospector
+        dest: ~/bin/prospector
+        owner: barbosa
+        group: barbosa
+        state: link
+
+    - name: pip | pyenv | neovim3 | link pydocstyle
+      tags: packages,pyenv,workstation-packages,pip,neovim3,pydocstyle-link
+      file:
+        src: ~/.pyenv/versions/neovim3/bin/pydocstyle
+        dest: ~/bin/pydocstyle
+        owner: barbosa
+        group: barbosa
+        state: link
+
+    - name: pip | pyenv | neovim3 | link mypy
+      tags: packages,pyenv,workstation-packages,pip,neovim3,mypy-link
+      file:
+        src: ~/.pyenv/versions/neovim3/bin/mypy
+        dest: ~/bin/mypy
+        owner: barbosa
+        group: barbosa
+        state: link
+
+    - name: pip | pyenv | neovim3 | link pylama
+      tags: packages,pyenv,workstation-packages,pip,neovim3,pylama-link
+      file:
+        src: ~/.pyenv/versions/neovim3/bin/pylama
+        dest: ~/bin/pylama
+        owner: barbosa
+        group: barbosa
+        state: link
+
+    - name: pip | pyenv | neovim3 | link pylint
+      tags: packages,pyenv,workstation-packages,pip,neovim3,pylint-link
+      file:
+        src: ~/.pyenv/versions/neovim3/bin/pylint
+        dest: ~/bin/pylint
+        owner: barbosa
+        group: barbosa
+        state: link
+
+    - name: pip | pyenv | neovim3 | link yapf
+      tags: packages,pyenv,workstation-packages,pip,neovim3,yapf-link
+      file:
+        src: ~/.pyenv/versions/neovim3/bin/yapf
+        dest: ~/bin/yapf
+        owner: barbosa
+        group: barbosa
+        state: link
+
+    - name: pip | pyenv | neovim3 | link yamllint
+      tags: packages,pyenv,workstation-packages,pip,neovim3,yamllint-link
+      file:
+        src: ~/.pyenv/versions/neovim3/bin/yamllint
+        dest: ~/bin/yamllint
+        owner: barbosa
+        group: barbosa
+        state: link
+
     - name: pip | ipython | configuration
-      tags: pip,pyenv,ipython
       shell: |
         # cd to project directory
         ipython profile create
