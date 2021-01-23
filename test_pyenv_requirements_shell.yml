@@ -29,14 +29,14 @@
         group: barbosa
         state: link
 
-    # - name: pip | pyenv | jupyter3 | install requirements using shell
-    #   shell: |
-    #     # cd to project directory
-    #     ~/.pyenv/versions/jupyter3/bin/python -m pip install -U jupyter environment_kernels
-    #     ~/.pyenv/versions/jupyter3/bin/python -m ipykernel install --user
-    #     ~/.pyenv/versions/jupyter3/bin/jupyter notebook --generate-config -y
-    #     executable: /bin/bash
-    #   register: pip_jupyter3_script_result
+    - name: pip | pyenv | jupyter3 | install requirements using shell
+      shell: |
+        # cd to project directory
+        ~/.pyenv/versions/jupyter3/bin/python -m pip install -U jupyter environment_kernels
+        ~/.pyenv/versions/jupyter3/bin/python -m ipykernel install --user
+        ~/.pyenv/versions/jupyter3/bin/jupyter notebook --generate-config -y
+        executable: /bin/bash
+      register: pip_jupyter3_script_result
 
     - name: pip | pyenv | jupyter3 | link jupyter
       tags: packages,pyenv,workstation-packages,pip,jupyter3,jupyter3-link
