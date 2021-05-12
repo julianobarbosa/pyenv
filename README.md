@@ -87,7 +87,7 @@ pyenv deactivate
 ```console
 mkdir -p ~/bin
 pyenv activate tools3
-pip install -U ansible ansible-lint autopep8 black colorama cookiecutter flake8 gnucash-to-beancount isort jedi-language-server jrnl mps-youtube molecule mypy oci-cli prospector pydocstyle pyflakes pylama pylint pyls rows speedtest-cli fast.com reorder-python-imports zabbix-api youtube-dl tmuxp vulture yapf yamlfix yamllint 
+pip install -U ansible ansible-lint autopep8 black colorama cookiecutter fast.com flake8 gnucash-to-beancount isort jedi-language-server jrnl mps-youtube molecule mypy oci-cli prospector pydocstyle pyflakes pylama pylint pyls rows speedtest-cli reorder-python-imports thefuck zabbix-api youtube-dl tmuxp vulture yapf yamlfix yamllint 
 # URL: https://www.tecmint.com/powerline-adds-powerful-statuslines-and-prompts-to-vim-and-bash/
 # pip install git+git://github.com/Lokaltog/powerline
 pip install vim-power
