@@ -57,6 +57,7 @@ pyenv install 2.7.18
 pyenv virtualenv 3.9.6 jupyter3 && \
 pyenv virtualenv 3.9.6 tools3 && \
 pyenv virtualenv 3.9.6 neovim3 && \
+pyenv virutalenv 3.9.6 oracle-oci && \
 pyenv virtualenv 2.7.18 ipython2 && \
 pyenv virtualenv 2.7.18 tools2 && \
 pyenv virtualenv 2.7.18 neovim2
@@ -87,12 +88,20 @@ pyenv deactivate
 ```console
 mkdir -p ~/bin
 pyenv activate tools3
-pip install -U ansible ansible-lint autopep8 black colorama cookiecutter fast.com flake8 gnucash-to-beancount isort jedi-language-server jrnl mps-youtube molecule mypy oci-cli==2.25.4 prospector pydocstyle pyflakes pylama pylint pyls rows speedtest-cli reorder-python-imports thefuck zabbix-api youtube-dl tmuxp vulture yapf yamlfix yamllint 
+pip install -U ansible ansible-lint autopep8 black colorama cookiecutter fast.com flake8 gnucash-to-beancount isort jedi-language-server jrnl mps-youtube molecule mypy prospector pydocstyle pyflakes pylama pylint pyls rows speedtest-cli reorder-python-imports thefuck zabbix-api youtube-dl tmuxp vulture yapf yamlfix yamllint 
 # URL: https://www.tecmint.com/powerline-adds-powerful-statuslines-and-prompts-to-vim-and-bash/
 # pip install git+git://github.com/Lokaltog/powerline
 pip install vim-power
 ln -s `pyenv which pytest` ~/bin/pytest
 ln -s `pyenv which tmuxp` ~/bin/tmuxp
+pyenv deactivate
+```
+
+# Install oracle-oci
+
+```console
+pyenv activate oracle-oci
+pip install -U oci-cli
 pyenv deactivate
 ```
 
@@ -133,7 +142,7 @@ pyenv deactivate
 
 # Enable
 ```console
-pyenv global 3.9.6 2.7.18 jupyter3 ipython2 tools3 tools2 neovim3 neovim2
+pyenv global 3.9.6 2.7.18 oracle-oci jupyter3 ipython2 tools3 tools2 neovim3 neovim2
 ```
 
 # ipython with pyenv
