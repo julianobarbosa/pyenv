@@ -67,7 +67,7 @@ pyenv virtualenv 2.7.18 neovim2
 
 ```console
 pyenv activate jupyter3
-pip install -U jupyter environment_kernels
+pip install -U jupyter environment_kernels jupyter_contrib_nbextensions
 python -m ipykernel install --user
 jupyter notebook --generate-config
 ln -s `pyenv which jupyter` ~/bin/jupyter
