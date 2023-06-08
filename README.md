@@ -72,6 +72,7 @@ python -m ipykernel install --user
 python -m powershell_kernel.install --powershell-command pwsh
 python -m bash_kernel.install
 jupyter notebook --generate-config
+jupyter contrib nbextension install --user
 ln -s `pyenv which jupyter` ~/bin/jupyter
 pyenv deactivate
 ```
