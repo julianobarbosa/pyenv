@@ -29,7 +29,7 @@ zypper install gcc automake make openssl-devel ncurses-devel readline-devel zlib
 
 ## ubuntu
 ```console
-sudo apt install -y make build-essential libxslt1-dev libxml2-dev libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
+sudo apt install -y make build-essential libxslt1-dev libxml2-dev libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python3-openssl git
 ```
 ## centos
 ```console
