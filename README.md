@@ -78,6 +78,7 @@ python -m bash_kernel.install
 jupyter notebook --generate-config
 jupyter contrib nbextension install --user
 jupyter nbextension enable hinterland/hinterland
+jupyter contrib nbextension install --sys-prefix
 ln -s `pyenv which jupyter` ~/bin/jupyter
 pyenv deactivate
 ```
