@@ -83,6 +83,11 @@ ln -s `pyenv which jupyter` ~/bin/jupyter
 pyenv deactivate
 ```
 
+# Install all lsp for jupyter
+```bash
+~/.local/bin/install-lsp.sh
+```
+
 # Install ipython on python2
 
 ```console
