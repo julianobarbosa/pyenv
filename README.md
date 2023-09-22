@@ -87,7 +87,15 @@ pyenv deactivate
 ```bash
 ~/.local/bin/install-lsp.sh
 ```
-
+# [jupyter Lab](https://www.linkedin.com/pulse/tensorflow-gpu-ubuntu-wsl-gerald-gibson/)
+```bash
+python -m pip install -q --upgrade pip setuptools pip-autoremove
+python -m pip install --no-input numpy numba matplotlib cupy-cuda112 pandas pandoc plotly scipy seaborn statistics tabulate line_profiler
+python -m pip install --no-input tensorflow==2.9.1 tensorflow-probability tensorflow-addons tensorflow_datasets tensorflow-text==2.9.0 
+python -m pip install --no-input pywebcopy bs4 PySimpleGUI display_xml gtts playsound
+python -m pip install --no-input jupyterlab ipyfilechooser tqdm wget
+python -m pip install -q jupyterlab-lsp python-lsp-server[all]
+```
 # Install ipython on python2
 
 ```console
