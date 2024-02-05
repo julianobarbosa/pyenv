@@ -71,7 +71,7 @@ pyenv virtualenv 2.7.18 neovim2
 
 ```console
 pyenv activate jupyter3
-pip install -U jupyter==6.1.5 environment_kernels jupyter_contrib_nbextensions notebook_shim python-language-server powershell_kernel bash_kernel jupyterthemes cython==0.29.30
+pip install -U jupyter==6.1.5 environment_kernels jupyterlab jupyter_ai jupyter_ai_magics jupyter_contrib_nbextensions notebook_shim python-language-server powershell_kernel bash_kernel jupyterthemes cython==0.29.30
 python -m ipykernel install --user
 python -m powershell_kernel.install --powershell-command pwsh
 python -m bash_kernel.install
