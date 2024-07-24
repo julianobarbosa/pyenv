@@ -189,11 +189,13 @@ let g:python3_host_prog = expand('$HOME/.pyenv/versions/neovim3/bin/python')
 # jupyter
 nvim ~/.jupyter/jupyter_notebook_config.py
 ```console
-c.NotebookApp.kernel_spec_manager_class = 'environment_kernels.EnvironmentKernelSpecManager'
+c.ServerApp.kernel_spec_manager_class = 'environment_kernels.EnvironmentKernelSpecManager'
 c.EnvironmentKernelSpecManager.find_conda_envs=False
 c.EnvironmentKernelSpecManager.virtualenv_env_dirs=['~/.pyenv/versions/']
 c.EnvironmentKernelSpecManager.virtualenv_prefix_template = "{}"
 c.EnvironmentKernelSpecManager.display_name_template = "{}"
+c.ServerApp.log_datefmt = "%Y-%m-%d %H:%M:%S"
+c.ServerApp.open_browser = False
 ```
 
 # ipython
