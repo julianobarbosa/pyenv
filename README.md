@@ -95,7 +95,7 @@ python -m pip install --no-input tensorflow==2.9.1 tensorflow-probability tensor
 python -m pip install --no-input pywebcopy bs4 PySimpleGUI display_xml gtts playsound
 python -m pip install --no-input jupyterlab ipyfilechooser tqdm wget
 python -m pip install -q jupyterlab-lsp python-lsp-server[all]
-python -m pip install -U langchain_anthropic langchain_openai langchain_mistralai
+python -m pip install -U langchain_google_genai langchain_nvidia_ai_endpoints langchain_anthropic langchain_openai langchain_mistralai langchain_cohere cohere 
 ```
 # Install ipython on python2
 
