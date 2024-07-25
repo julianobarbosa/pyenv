@@ -214,7 +214,7 @@ cfg.InteractiveShellEmbed.confirm_exit = False
 alias interacti IPython.embed(config=cfg)
 ```
 
-# install R
+# [install R](https://www.geeksforgeeks.org/how-to-fix-kernel-error-in-jupyter-notebook/)
 ```console
 sudo apt update
 sudo apt install r-base r-base-dev
