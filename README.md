@@ -213,3 +213,9 @@ cfg.InteractiveShellEmbed.confirm_exit = False
 
 alias interacti IPython.embed(config=cfg)
 ```
+
+# install R
+```console
+sudo apt update
+sudo apt install r-base r-base-dev
+```
