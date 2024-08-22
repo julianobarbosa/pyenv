@@ -79,7 +79,7 @@ jupyter notebook --generate-config
 jupyter contrib nbextension install --user
 jupyter nbextension enable hinterland/hinterland
 jupyter contrib nbextension install --sys-prefix
-ln -s `pyenv which jupyter` ~/bin/jupyter
+ln -s `pyenv which jupyter` ~/.local/bin/jupyter
 pyenv deactivate
 ```
 
@@ -112,14 +112,14 @@ pyenv deactivate
 # Install tools3
 
 ```console
-mkdir -p ~/bin
+mkdir -p ~/.local/bin
 pyenv activate tools3
 pip install -U ansible ansible-lint autoenv autopep8 black codespell colorama cookiecutter fast.com flake8 gnucash-to-beancount isort jedi-language-server jrnl mps-youtube molecule mypy pre-commit prospector pyarmor pydocstyle pyflakes pylama pylint pyls rows speedtest-cli reorder-python-imports thefuck zabbix-api youtube-dl tmuxp vulture yapf yamlfix yamllint visidata virtualenv virtualenvwrapper
 # URL: https://www.tecmint.com/powerline-adds-powerful-statuslines-and-prompts-to-vim-and-bash/
 # pip install git+git://github.com/Lokaltog/powerline
 pip install vim-power
-ln -s `pyenv which pytest` ~/bin/pytest
-ln -s `pyenv which tmuxp` ~/bin/tmuxp
+ln -s `pyenv which pytest` ~/.local/bin/pytest
+ln -s `pyenv which tmuxp` ~/.local/bin/tmuxp
 pyenv deactivate
 ```
 
@@ -152,16 +152,16 @@ pyenv deactivate
 ```console
 pyenv activate neovim3
 pip install -U black pynvim pylint flake8 jedi autopep8 pep8 pydocstyle pyflakes isort yapf yamllint mypy
-ln -s `pyenv which autopep8` ~/bin/autopep8
-ln -s `pyenv which black` ~/bin/black
-ln -s `pyenv which flake8` ~/bin/flake8
-ln -s `pyenv which isort` ~/bin/isort
-ln -s `pyenv which jedi` ~/bin/jedi
-ln -s `pyenv which mypy` ~/bin/mypy
-ln -s `pyenv which pydocstyle` ~/bin/pydocstyle
-ln -s `pyenv which pylint` ~/bin/pylint
-ln -s `pyenv which yapf` ~/bin/yapf
-ln -s `pyenv which yamllint` ~/bin/yamllint
+ln -s `pyenv which autopep8` ~/.local/bin/autopep8
+ln -s `pyenv which black` ~/.local/bin/black
+ln -s `pyenv which flake8` ~/.local/bin/flake8
+ln -s `pyenv which isort` ~/.local/bin/isort
+ln -s `pyenv which jedi` ~/.local/bin/jedi
+ln -s `pyenv which mypy` ~/.local/bin/mypy
+ln -s `pyenv which pydocstyle` ~/.local/bin/pydocstyle
+ln -s `pyenv which pylint` ~/.local/bin/pylint
+ln -s `pyenv which yapf` ~/.local/bin/yapf
+ln -s `pyenv which yamllint` ~/.local/bin/yamllint
 
 pyenv deactivate
 ```
