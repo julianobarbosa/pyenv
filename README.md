@@ -168,7 +168,7 @@ pyenv deactivate
 
 # Enable
 ```console
-pyenv global 3.11.7 2.7.18 oracle-oci jupyter3 ipython2 tools3 tools2 neovim3 neovim2
+pyenv global 3.11.9 2.7.18 oracle-oci jupyter3 ipython2 tools3 tools2 neovim3 neovim2
 ```
 
 # ipython with pyenv
