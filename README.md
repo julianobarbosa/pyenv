@@ -51,17 +51,17 @@ dnf update -y
 # Install python
 
 ```console
-pyenv install 3.11.7
+pyenv install 3.11.9
 pyenv install 2.7.18
 ```
 
 # Create Environment
 
 ```console
-pyenv virtualenv 3.11.7 jupyter3 && \
-pyenv virtualenv 3.11.7 tools3 && \
-pyenv virtualenv 3.11.7 neovim3 && \
-pyenv virutalenv 3.11.7 oracle-oci && \
+pyenv virtualenv 3.11.9 jupyter3 && \
+pyenv virtualenv 3.11.9 tools3 && \
+pyenv virtualenv 3.11.9 neovim3 && \
+pyenv virutalenv 3.11.9 oracle-oci && \
 pyenv virtualenv 2.7.18 ipython2 && \
 pyenv virtualenv 2.7.18 tools2 && \
 pyenv virtualenv 2.7.18 neovim2
